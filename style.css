@@ -1,0 +1,224 @@
+/* Next Project: Contact Management Form */
+body {
+    background-color: lightgoldenrodyellow;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    min-height: 70vh;
+    width: min(100%, 550px);
+    padding: 30px 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form:hover {
+    transform: translateY(-2px);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    padding: 8px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    width: min(100%, 300px);
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    margin: 0 5px 0 10px;
+    vertical-align: middle;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+select:hover,
+textarea:hover {
+    background-color: lightblue;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: blue;
+    background-color: white;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+textarea {
+    height: 60px;
+    resize: none;
+}
+
+.nameMessage, .emailMessage, .numberMessage, 
+.categoryMessage, .addressMessage, .statusMessage, .favoriteMessage {
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+    margin: 2px 0 0 0;
+    min-height: 18px;
+}
+
+.error {
+    background-color: red;
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.success {
+    background-color: green;
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.buttons {
+   display: flex;
+   gap: 20px;
+   margin-top: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+.resetBtn {
+    background-color: #6c757d;
+}
+.resetBtn:hover {
+    background-color: #5a6268;
+}
+.contacts {
+    width: 100%;
+    margin-top: 20px;
+    border-top: 2px dashed #ccc;
+    padding-top: 20px;
+}
+
+.contactList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.contactCard {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.contactCard:hover {
+    transform: scale(1.01);
+    border-color: #bbb;
+}
+
+.contactCard h3 {
+    margin: 0 0 8px 0;
+    color: #333;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge {
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.badge-active { background-color: green; }
+.badge-inactive { background-color: gray; }
+
+.contactCard p {
+    margin: 4px 0;
+    font-size: 15px;
+    color: #555;
+}
+
+.cardActions {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.editBtn {
+    background-color: #ffc107;
+    color: black;
+}
+.editBtn:hover {
+    background-color: #e0a800;
+}
+
+.deleteBtn {
+    background-color: #dc3545;
+}
+.deleteBtn:hover {
+    background-color: #bd2130;
+}

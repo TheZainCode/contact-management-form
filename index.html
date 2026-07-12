@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form">
+                <h1>Contact Management Form</h1>
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="inputName" id="name" placeholder="e.g. Zain">
+                    <p class="nameMessage"></p>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="inputEmail" id="email" placeholder="example@gmail.com">
+                    <p class="emailMessage"></p>
+                </div>
+                <div class="input-group">
+                    <label for="number">Phone Number:</label>
+                    <input type="tel" class="inputNumber" id="number" placeholder="03XXXXXXXXX">
+                    <p class="numberMessage"></p>
+                </div>
+                <div class="input-group">
+                    <label for="category">Category:</label>
+                    <select class="inputCategory" id="category">
+                        <option value="select"> -- Select --</option>
+                        <option value="family">Family</option>
+                        <option value="friend">Friend</option>
+                        <option value="work">Work</option>
+                        <option value="emergency">Emergency</option>
+                    </select>
+                    <p class="categoryMessage"></p>
+                </div>
+                <div class="input-group">
+                    <label for="address">Address:</label>
+                    <textarea class="inputAddress" id="address"></textarea>
+                    <p class="addressMessage"></p>
+                </div>
+                <div class="input-group">
+                    <label for="isFavorite">Add To Favorite:</label>
+                    <input type="checkbox" id="isFavorite" class="inputFavorite">
+                    <p class="favoriteMessage"></p>
+                </div>
+                <div class="input-group">
+                    <label for="status">Status:</label>
+                    <input type="radio" class="status" name="status" value="active">Active
+                    <input type="radio" class="status" name="status" value="inactive">Inactive
+                    <p class="statusMessage"></p>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="submitBtn">Submit</button>
+                    <button type="reset" class="resetBtn">Reset</button>
+                </div>
+                <section class="contacts">
+                    <ul class="contactList"></ul>
+                </section>
+                <p class="message"></p>
+            </form>
+    <script src="script.js"></script>
+</body>
+</html>
